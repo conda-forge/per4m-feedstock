@@ -10,7 +10,7 @@ source:
   sha256: 1ad88154af2e6b2c0d2234f14de1f3542e9f2fc454adcbf005bbd1fe395eaae6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - per4m = per4m.__main__:main
