@@ -12,7 +12,7 @@ source:
     - importlib-metadata.patch
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - per4m = per4m.__main__:main
@@ -38,7 +38,7 @@ requirements:
     - numpy
     - python
     - tabulate
-    - viztracer
+    - viztracer <0.16
 
 test:
   imports:
@@ -49,6 +49,8 @@ test:
     - per4m --help
     - per4m perf2trace --help
     - perf-pyrecord --help
+    - perf-pyscript --help
+    - offgil --help
   requires:
     - python
     - pip
