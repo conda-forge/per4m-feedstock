@@ -1,0 +1,16 @@
+diff --git a/per4m/__init__.py b/per4m/__init__.py
+index ca5c74e..ea6e7f1 100644
+--- a/per4m/__init__.py
++++ b/per4m/__init__.py
+@@ -1,8 +1,8 @@
+-from pkg_resources import get_distribution, DistributionNotFound
++from importlib.metadata import PackageNotFoundError, version
+ 
+ try:
+-    __version__ = get_distribution("per4m").version
+-except DistributionNotFound:
++    __version__ = version("per4m")
++except PackageNotFoundError:
+      # package is not installed
+     pass
+ 
