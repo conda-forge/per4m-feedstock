@@ -30,6 +30,7 @@ requirements:
   host:
     - python
     - setuptools
+    - setuptools-scm
     - wheel
     - pip
     - pybind11
