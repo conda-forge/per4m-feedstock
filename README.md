@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: Profiling and tracing information for Python using viztracer and perf, the GIL exposed.
 
+Development: https://github.com/maartenbreddels/per4m
+
 Current build status
 ====================
 
